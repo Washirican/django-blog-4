@@ -1,14 +1,13 @@
 # --------------------------------------------------------------------------- #
-# Course: PYTHON 230: Internet Programming in Python
+# Course: PYTHON 230: Internet Programming With Python
 # Script Title: 
 # Change Log: (Who, When, What)
 # D. Rodriguez, 2019-08-15, Initial release
 # --------------------------------------------------------------------------- #
 
-import os
 import dj_database_url
 from .settings import *
-
+import os
 
 DATABASES = {
     'default': dj_database_url.config(default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3'))
